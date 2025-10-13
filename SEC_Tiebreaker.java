@@ -3,6 +3,7 @@ import java.util.ArrayList;
 // import java.util.Collection;
 import java.util.InputMismatchException;
 import java.util.Random;
+import java.math.*;
 
 public class SEC_Tiebreaker { 
     public static void main(String[] args) {
@@ -431,17 +432,20 @@ public class SEC_Tiebreaker {
         teams_tied = teams_still_tied;
         setSize();
         if (!check()) {
-            SportSource();
+            RSM();
         }
         input.close();
     }
 
     // Tiebreaker 5: SportSource Analytics Rankings
-    private static void SportSource() {
-        System.out.println("Step 5: SportSource Rankings");
-        System.out.println("This step is impossible to get without paying SportSource, so it will be skipped.");
+    private static void RSM() {
+        System.out.println("Step 5: Relative Scoring Margin");
+        System.out.println("This step requires a lot of planning to code correctly, so it will be skipped.");
         Random_Selection();
+        // double cap = 2.0;
+        // double floor = 0.0;
         Scanner input = new Scanner (System.in);
+        // System.out.println("Step incomplete. Construction in progress. Skip to Step 6.");
         if (!check()) {
             Random_Selection();
         }
