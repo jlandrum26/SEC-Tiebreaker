@@ -441,7 +441,7 @@ public class SEC_Tiebreaker {
     private static void RSM() {
         System.out.println("Step 5: Relative Scoring Margin");
         System.out.println("This step requires a lot of planning to code correctly, so it will be skipped.");
-        Random_Selection();
+        // Random_Selection();
         // double cap = 2.0;
         // double floor = 0.0;
         Scanner input = new Scanner (System.in);
@@ -459,6 +459,7 @@ public class SEC_Tiebreaker {
         int final_idx = rand.nextInt(len_teams_tied);
         // System.out.println(final_idx);
         System.out.printf("%s wins the tiebreaker!\n", teams_tied.get(final_idx));
+        return;
     }
 
     // Set the size of the tied teams list
