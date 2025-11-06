@@ -3,7 +3,7 @@ import java.util.ArrayList;
 // import java.util.Collection;
 import java.util.InputMismatchException;
 import java.util.Random;
-import java.math.*;
+// import java.math.*;
 
 public class SEC_Tiebreaker { 
     public static void main(String[] args) {
